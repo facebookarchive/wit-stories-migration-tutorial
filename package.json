@@ -1,0 +1,14 @@
+{
+  "name": "one-turn-stories-migration",
+  "version": "1.0.0",
+  "description": "Guide to wit.ai's stories migration",
+  "main": "index.js",
+  "author": "wit.ai <team@wit.ai>",
+  "license": "MIT",
+  "dependencies": {
+    "node-wit": "4.2.0"
+  },
+  "engines": {
+    "node": ">=7.5.0"
+  }
+}
