@@ -1,6 +1,6 @@
 # Stories Migration Tutorial
 
-As you have heard on the [Wit.ai blog](TODO), the team will sunset Stories, to focus on a more reliable, scaled, and integrated NLP experience.
+As you have heard on the [Wit.ai blog](https://wit.ai/blog/2017/07/27/sunsetting-stories), the team will sunset Stories, to focus on a more reliable, scaled, and integrated NLP experience.
 
 If you are a a current user of Stories, this means two things:
 
