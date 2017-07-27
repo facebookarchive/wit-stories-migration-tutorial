@@ -4,7 +4,7 @@ As you have heard on the [Wit.ai blog](https://wit.ai/blog/2017/07/27/sunsetting
 
 If you are a a current user of Stories, this means two things:
 
-1. `/converse` API, alongside `wit.runActions()` will stop working in 6 months.
+1. `/converse` API, alongside `wit.runActions()` will stop working on February 1, 2018.
 2. This also means that you have much more powerful tools at your disposable, and they are getting better.
 3. In the majority of use cases, you can replicate the flow from stories within your code, and improve upon it.
 
