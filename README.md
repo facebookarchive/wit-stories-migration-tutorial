@@ -105,7 +105,7 @@ function handleMessage(question) {
 
 ### Aand that's it!
 
-With the `/message` use case, you no longer have to strictly follow the paradgim of stories. You can both simplify the code, *and* add more rich features.
+With the `/message` use case, you no longer have to strictly follow the paradigm of stories. You can both simplify the code, *and* add more rich features.
 
 For example:
 - What if there are no intents?
