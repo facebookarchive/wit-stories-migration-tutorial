@@ -96,7 +96,7 @@ function handleMessage(question) {
 }
 ```
 
-### Aand that's it!
+### And that's it!
 
 With the `/message` use case, you can build your own stories. You can both simplify the code, *and* add more rich features.
 
