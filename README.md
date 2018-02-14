@@ -1,6 +1,6 @@
 # Stories Migration Tutorial
 
-As you may have heard on the [Wit.ai blog](https://wit.ai/blog/2017/07/27/sunsetting-stories), we don't support Stories and /converse anymore to focus on a more reliable, scaled, and integrated NLP experience.
+As explained in [this Wit.ai blog post](https://wit.ai/blog/2017/07/27/sunsetting-stories), we decided to focus on a more reliable, scalable, and integrated NLP experience, and as such discontinued our support for Stories and /converse.
 
 If you were using Stories, this means two things:
 
