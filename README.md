@@ -1,26 +1,19 @@
 # Stories Migration Tutorial
 
-As you have heard on the [Wit.ai blog](https://wit.ai/blog/2017/07/27/sunsetting-stories), the team will sunset Stories, to focus on a more reliable, scaled, and integrated NLP experience.
+As explained in [this Wit.ai blog post](https://wit.ai/blog/2017/07/27/sunsetting-stories), we decided to focus on a more reliable, scalable, and integrated NLP experience, and as such discontinued our support for Stories and /converse.
 
-If you are a a current user of Stories, this means two things:
+If you were using Stories, this means two things:
 
-1. `/converse` API, alongside `wit.runActions()` will stop working on February 1, 2018.
-2. This also means that you have much more powerful tools at your disposal, and they are getting better.
-3. In the majority of use cases, you can replicate the flow from stories within your code, and improve upon it.
+1. `/converse` API, alongside `wit.runActions()` are no longer supported since February 13, 2018 10am PST.
+2.  In the majority of use cases, you can still use /message and code on your side to manage the conversation.
 
 # The Tutorial
 
-This tutorial will tackle **3**, and show you how you can go about converting a stories app, to one that uses `/message`.
+This tutorial will show you how you can go about converting a stories app to one that uses `/message`.
 
 ## Let's start with an App
 
-###  [stopa-staging/appointment-bot](https://wit.ai/stopa-staging/appointment-bot/entities)
-
-For this tutorial, we will start with an [appointment-bot](https://wit.ai/stopa-staging/appointment-bot/entities) built on top of stories.
-
-## Using Stories
-
-To make an appointment-bot using stories, we would start with two basic stories: `apptMake`, and `apptShow`.
+For this tutorial, we will assume that you had an appointment-bot Wit app built on top of stories. You would have had two basic stories: `apptMake`, and `apptShow`.
 
 ![example story](/example-images/appt_show.png)
 
@@ -65,7 +58,7 @@ function handleMessage(userText, sessionId) {
 }
 ```
 
-## Using `/message`
+## Using `/message` instead
 
 Conceptually, Stories is simply using `/message` itself, and choosing a different path to take, based on what entities we extract.
 
@@ -103,16 +96,18 @@ function handleMessage(question) {
 }
 ```
 
-### Aand that's it!
+### And that's it!
 
-With the `/message` use case, you no longer have to strictly follow the paradgim of stories. You can both simplify the code, *and* add more rich features.
+With the `/message` use case, you can build your own stories. You can both simplify the code, *and* add more rich features.
 
 For example:
 - What if there are no intents?
   - You could use the [`N-best`](https://github.com/wit-ai/wit-api-only-tutorial#manage-uncertainty) feature to get multiple options for entity values, and let the user clarify
 - What if you want to dynamically change your bot's answers?
   - You can use a datastore and add [dynamic answers](https://github.com/wit-ai/wit-api-only-tutorial#dynamic-answers)
+- what if you want to use Messenger?
+  - With [Messenger Built-in NLP](https://developers.facebook.com/docs/messenger-platform/built-in-nlp) you can get your entities directly in the Send/Receive API so you don't even have to make a call to the Wit.ai server. 
 
 You can learn more about leveraging wit features on the [wit-api-only-tutorial](https://github.com/wit-ai/wit-api-only-tutorial).
 
-Thank you for being with us on this journey. We learned much from you over the years, and we look forward to focusing in, creating the best NLP experience, and continue to serve you further.
+Thank you for being with us on this journey. We learned so much from you over the years, and we look forward to focusing in, creating the best NLP experience, and continue to serve you further.
